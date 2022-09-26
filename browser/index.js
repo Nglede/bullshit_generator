@@ -3,9 +3,9 @@ import { createRandomPicker } from '../lib/random.js';
 
 const defaultCorpus = require('../corpus/data.json');
 
-async function loadCorpus(corpuspath) {
-  if(corpuspath) {
-    const corpus = await (await fetch(corpuspath)).json();
+async function loadCorpus(corpusPath) {
+  if(corpusPath) {
+    const corpus = await (await fetch(corpusPath)).json();
     return corpus;
   }
   return defaultCorpus;
