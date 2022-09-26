@@ -11,4 +11,4 @@ async function loadCorpus(corpuspath) {
   return defaultCorpus;
 }
 
-window.bullshitGenerator = {generate, createRandomPicker, loadCorpus};
+export default bullshitGenerator = {generate, createRandomPicker, loadCorpus};
